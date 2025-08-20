@@ -6,6 +6,18 @@
 /* |||| CUSTUM PROPERTIES |||| */
 
 :root {
+    /* COLORS */
+    --black: rgb(18, 18, 18);
+    --dark-blue: rgb(25, 32, 45);
+    --grey-100: rgb(231, 234, 238);
+    --grey-200: rgb(207, 207, 207);
+    --grey-400: rgb(103, 109, 126);
+    --grey-500: rgb(72, 85, 106);
+    --purple-50: rgb(237, 228, 255);
+    --purple-300: rgb(167, 117, 241);
+    --purple-500: rgb(115, 63, 200);
+    --white: rgb(255, 255, 255); 
+
     /* TEXT */
     /* font size */
     --font-size--name-and-test: 13px;
@@ -13,8 +25,8 @@
     --font-size--comment: 20px;
     /* font weight */
     /* md, md, semi-bold, md */
-    --font-weight--md: 500;
-    --font-weight--semi-bold: 600;
+    --font-weight--semi-bold: 500;
+    --font-weight--md: medium;
 }
 
 /* |||| GENERAL |||| */
@@ -37,51 +49,97 @@ html {
 main {
     display: flex;
     justify-content: center;
-    padding: 73px 35px;
+    /* padding: 73px 35px; */
 }
 
 img {
     align-self: center;
     border-radius: 50%;
     height: 25px;
+    margin-inline-end: 15px;
     object-fit: contain;
     width: 25px;
 }
 
 /* TEXT */
 
+h1 {
+    font-weight: var(--font-weight--semi-bold);
+}
+
 h1, blockquote {
     font-size: var(--font-size--name);
 }
 
+h1, h2 {
+    line-height: 110%;
+}
+
 h2 {
     font-size: var(--font-size--grad-status);
+    font-weight: var(--font-weight--md);
+    margin-block-start: 4px;
 }
 
 p {
     font-size: var(--font-size--comment);
     font-weight: var(--font-weight--semi-bold);
+    line-height: 120%;
+}
+
+blockquote {
+    /* font-weight: var(--font-weight--md); */
+    line-height: 140%;
 }
 
 /* CONTAINERS */
 
 .grid-container {
     display: grid;
+    gap: 32px;
     grid-template-columns: 1fr;
 }
 
 /* ||||  CARD |||| */
 
 .card {
-    border: 2px solid red;
+    border-radius: 8px;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: var(--font-weight--md);
     padding: 32px;
-    width: 47ch;
+    max-width: 47ch;
 }
 
 .personal-id {
     display: flex;
 }
 
-/* continue with spacing */
+.personal-id, p {
+    margin-block-end: 16px;
+}
+
+/* CARD BACKGROUND-COLOR AND COLOR */
+
+.bg-purple-500 {
+    background-color: var(--purple-500);
+    color: var(--white);
+}
+
+.color-purple-50 {
+    color: var(--purple-50);
+}
+
+.bg-grey-500 {
+    background-color: var(--grey-500);
+    color: var(--white);
+}
+
+.color-grey-200 {
+    color: var(--grey-200);
+}
+
+.color-grey-100 {
+    color: var(--grey-100);
+}
+
+/* continue styling color on cards */
