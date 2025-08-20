@@ -1,0 +1,87 @@
+/* |||| IMPORT |||| */
+/* FONT FAMILY */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* |||| CUSTUM PROPERTIES |||| */
+
+:root {
+    /* TEXT */
+    /* font size */
+    --font-size--name-and-test: 13px;
+    --font-size--grad-status: 11px;
+    --font-size--comment: 20px;
+    /* font weight */
+    /* md, md, semi-bold, md */
+    --font-weight--md: 500;
+    --font-weight--semi-bold: 600;
+}
+
+/* |||| GENERAL |||| */
+
+/* RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BASIC STYLING */
+
+html {
+    font-size: 13px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 73px 35px;
+}
+
+img {
+    align-self: center;
+    border-radius: 50%;
+    height: 25px;
+    object-fit: contain;
+    width: 25px;
+}
+
+/* TEXT */
+
+h1, blockquote {
+    font-size: var(--font-size--name);
+}
+
+h2 {
+    font-size: var(--font-size--grad-status);
+}
+
+p {
+    font-size: var(--font-size--comment);
+    font-weight: var(--font-weight--semi-bold);
+}
+
+/* CONTAINERS */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* ||||  CARD |||| */
+
+.card {
+    border: 2px solid red;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: var(--font-weight--md);
+    padding: 32px;
+    width: 47ch;
+}
+
+.personal-id {
+    display: flex;
+}
+
+/* continue with spacing */
