@@ -168,7 +168,8 @@ blockquote {
     /* |||| GENERAL |||| */
 
     main {
-        padding: 83px 61px 113px 60px; 
+        /* padding: 83px 61px 113px 60px;  */
+        align-items: center;
     }
 
     /* |||| TEXT |||| */
