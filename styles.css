@@ -230,6 +230,7 @@ blockquote {
 
     main {
         padding: 229px 161px 218px 165px;
+        /* padding: 229px 0 218px; */
     }
     
     /* |||| CONTAINERS |||| */
