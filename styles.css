@@ -24,7 +24,6 @@
     --font-size--grad-status: 11px;
     --font-size--comment: 20px;
     /* font weight */
-    /* md, md, semi-bold, md */
     --font-weight--semi-bold: 500;
     --font-weight--md: medium;
 }
@@ -59,7 +58,6 @@ img {
     height: 25px;
     margin-inline-end: 15px;
     object-fit: contain;
-    /* width: 25px; */
     max-width: 100%;
 }
 
@@ -70,7 +68,7 @@ h1 {
 }
 
 h1, blockquote {
-    font-size: var(--font-size--name);
+    font-size: var(--font-size--name-and-test);
 }
 
 h1, h2 {
@@ -165,38 +163,44 @@ blockquote {
 /* |||| SCREEN SIZES |||| */
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
+
+    /* |||| GENERAL |||| */
 
     main {
-        /* justify-content: center; */
         padding: 83px 61px 113px 60px; 
     }
+
+    /* |||| TEXT |||| */
+
+    blockquote {
+        max-width: 87.2ch;
+        /* max-width: 87.4ch; */
+    }
+
+    p {
+        max-width: 57ch;
+    }
+
     /* |||| CONTAINERS |||| */
-    /* working on proper spacing. Try max-width on the blockquote and p elements instead. */
     .grid-container {
-        border: 2px solid red;
-        gap: 32px;
-        /* gap: 0px; */
-        /* grid-template-columns: 1fr 1fr; */
         grid-auto-columns: 1fr;
-        /* grid-template-rows: 1fr auto; */
         grid-template-areas: 
         "d-cliff    d-cliff"
         "j-walters  j-harmon"
         "p-abrams   p-abrams"
         "k-whittle  k-whittle";
-        /* justify-content: space-between; */
-        /* max-width: 97ch; */
-        /* max-width: 90%; */
         max-width: 647px;
     }
 
     .card {
-        max-width: 97ch;
-        /* max-width: 100%; */
+        max-width: 100%;
     }
 
     .d-cliff {
+        background-image: url("images/bg-pattern-quotation.svg") ;
+        background-repeat: no-repeat;
+        background-position-x: 372px;
         grid-area: d-cliff;
     }
 
@@ -214,5 +218,19 @@ blockquote {
 
     .k-whittle {
         grid-area: k-whittle;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1100px) {
+    
+    /* |||| CONTAINERS |||| */
+    
+    .grid-container {
+        grid-template-areas: 
+        "d-cliff    d-cliff     j-walters   k-whittle"
+        "j-harmon   p-abrams    p-abrams    k-whittle";
+        max-width: 1114px;
     }
 }
