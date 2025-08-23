@@ -168,8 +168,8 @@ blockquote {
     /* |||| GENERAL |||| */
 
     main {
-        /* padding: 83px 61px 113px 60px;  */
-        align-items: center;
+        padding: 83px 61px 113px 60px; 
+        /* align-items: center; */
     }
 
     /* |||| TEXT |||| */
@@ -225,6 +225,12 @@ blockquote {
 /* DESKTOP */
 
 @media screen and (min-width: 1100px) {
+
+    /* |||| GENERAL |||| */
+
+    main {
+        padding: 229px 161px 218px 165px;
+    }
     
     /* |||| CONTAINERS |||| */
     
