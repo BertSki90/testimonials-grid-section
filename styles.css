@@ -61,29 +61,44 @@ img {
     /* max-width: 28px; */
 }
 
+/* SCREEN READER - TITLE */
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
 /* TEXT */
 
-h1 {
+h2, p {
     font-weight: var(--font-weight--semi-bold);
 }
 
-h1, blockquote {
+h2, blockquote {
     font-size: var(--font-size--name-and-test);
 }
 
-h1, h2 {
+h2, h3 {
     line-height: 110%;
 }
 
-h2 {
+h3 {
     font-size: var(--font-size--grad-status);
-    font-weight: var(--font-weight--md);
+    /* font-weight: var(--font-weight--md); */
     margin-block-start: 4px;
+}
+
+h2, h3, blockquote {
+    font-weight: var(--font-weight--md);
 }
 
 p {
     font-size: var(--font-size--comment);
-    font-weight: var(--font-weight--semi-bold);
+    /* font-weight: var(--font-weight--semi-bold); */
     line-height: 120%;
 }
 
@@ -104,8 +119,9 @@ blockquote {
 
 .card {
     border-radius: 8px;
+    box-shadow: 40px 20px 20px 10px var(--grey-200);
     font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: var(--font-weight--md);
+    /* font-weight: var(--font-weight--md); */
     padding: 32px;
     max-width: 46ch;
 }
@@ -174,7 +190,8 @@ blockquote {
     /* |||| TEXT |||| */
 
     blockquote {
-        max-width: 87.2ch;
+        /* max-width: 87.2ch; */
+        max-width: 72ch;
     }
 
     p {
