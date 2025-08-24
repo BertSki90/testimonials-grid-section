@@ -20,12 +20,15 @@
 
     /* TEXT */
     /* font size */
-    --font-size--name-and-test: 13px;
-    --font-size--grad-status: 11px;
-    --font-size--comment: 20px;
+    /* --font-size--name-and-test: 13px; */
+    --font-size--name-and-test: 1rem;
+    /* --font-size--grad-status: 11px; */
+    --font-size--grad-status: 0.846rem;
+    /* --font-size--comment: 20px; */
+    --font-size--comment: 1.538rem;
     /* font weight */
     --font-weight--semi-bold: 500;
-    --font-weight--md: medium;
+    --font-weight--md: 400;
 }
 
 /* |||| GENERAL |||| */
@@ -49,16 +52,17 @@ html {
 main {
     display: flex;
     justify-content: center;
-    padding: 73px 0;
+    /* padding: 73px 0; */
+    padding: 5.615em 0;
 }
 
 img {
     align-self: center;
     border-radius: 50%;
-    height: 28px;
+    /* height: 28px; */
+    height: 2.154em;
     margin-inline-end: 15px;
     object-fit: contain;
-    /* max-width: 28px; */
 }
 
 /* SCREEN READER - TITLE */
@@ -88,8 +92,8 @@ h2, h3 {
 
 h3 {
     font-size: var(--font-size--grad-status);
-    /* font-weight: var(--font-weight--md); */
-    margin-block-start: 4px;
+    /* margin-block-start: 4px; */
+    margin-block-start: 0.364em;
 }
 
 h2, h3, blockquote {
@@ -98,12 +102,10 @@ h2, h3, blockquote {
 
 p {
     font-size: var(--font-size--comment);
-    /* font-weight: var(--font-weight--semi-bold); */
     line-height: 120%;
 }
 
 blockquote {
-    /* font-weight: var(--font-weight--md); */
     line-height: 140%;
 }
 
@@ -111,7 +113,8 @@ blockquote {
 
 .grid-container {
     display: grid;
-    gap: 32px;
+    /* gap: 32px; */
+    gap: 2.462em;
     grid-template-columns: 1fr;
 }
 
@@ -119,10 +122,10 @@ blockquote {
 
 .card {
     border-radius: 8px;
-    box-shadow: 40px 20px 20px 0 var(--grey-200);
+    box-shadow: 40px 70px 30px 10px var(--grey-200);
     font-family: "Barlow Semi Condensed", sans-serif;
-    /* font-weight: var(--font-weight--md); */
-    padding: 32px;
+    /* padding: 32px; */
+    padding: 2.462em;
     max-width: 46ch;
 }
 
@@ -131,7 +134,8 @@ blockquote {
 }
 
 .personal-id, p {
-    margin-block-end: 16px;
+    /* margin-block-end: 16px; */
+    margin-block-end: 1.231em;
 }
 
 /* CARD BACKGROUND-COLOR AND COLOR */
@@ -179,18 +183,18 @@ blockquote {
 /* |||| SCREEN SIZES |||| */
 
 /* TABLET */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em /* min-width: 600px */) {
 
     /* |||| GENERAL |||| */
 
     main {
-        padding: 83px 61px 113px 60px; 
+        /* padding: 83px 61px 113px 60px; */
+        padding: 6.385em 4.692em 8.692em 4.615em;
     }
 
     /* |||| TEXT |||| */
 
     blockquote {
-        /* max-width: 87.2ch; */
         max-width: 72ch;
     }
 
@@ -206,7 +210,8 @@ blockquote {
         "j-walters  j-harmon"
         "p-abrams   p-abrams"
         "k-whittle  k-whittle";
-        max-width: 647px;
+        /* max-width: 647px; */
+        max-width: 49.769em;
     }
 
     .card {
@@ -239,12 +244,13 @@ blockquote {
 
 /* DESKTOP */
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 68.75em /* min-width: 1100px */) {
 
     /* |||| GENERAL |||| */
 
     main {
-        padding: 229px 0 218px;
+        /* padding: 229px 0 218px; */
+        padding: 17.615em 0 16.769em;
     }
     
     /* |||| CONTAINERS |||| */
@@ -253,7 +259,9 @@ blockquote {
         grid-template-areas: 
         "d-cliff    d-cliff     j-walters   k-whittle"
         "j-harmon   p-abrams    p-abrams    k-whittle";
-        row-gap: 24px;
-        max-width: 1114px;
+        /* row-gap: 24px; */
+        row-gap: 1.846em;
+        /* max-width: 1114px; */
+        max-width: 85.692em;
     }
 }
