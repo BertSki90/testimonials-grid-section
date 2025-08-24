@@ -103,7 +103,7 @@ blockquote {
 
 ### Continued development
 
-Completion time: 5:52
+Completion time: 6:42
 
 I am enjoying these projects. I want to get better at matching the design files, working with CSS grid and flexbox, and using HTML elements more semantically.
 
