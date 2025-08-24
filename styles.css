@@ -180,6 +180,10 @@ blockquote {
     border: 2px solid var(--purple-300);
 }
 
+/* .img-border::before {
+    background-color: var(--purple-300);
+} */
+
 /* |||| SCREEN SIZES |||| */
 
 /* TABLET */
