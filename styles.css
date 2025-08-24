@@ -55,10 +55,10 @@ main {
 img {
     align-self: center;
     border-radius: 50%;
-    height: 25px;
+    height: 28px;
     margin-inline-end: 15px;
     object-fit: contain;
-    max-width: 100%;
+    /* max-width: 28px; */
 }
 
 /* TEXT */
@@ -169,14 +169,12 @@ blockquote {
 
     main {
         padding: 83px 61px 113px 60px; 
-        /* align-items: center; */
     }
 
     /* |||| TEXT |||| */
 
     blockquote {
         max-width: 87.2ch;
-        /* max-width: 87.4ch; */
     }
 
     p {
@@ -229,7 +227,6 @@ blockquote {
     /* |||| GENERAL |||| */
 
     main {
-        /* padding: 229px 161px 218px 165px; */
         padding: 229px 0 218px;
     }
     
