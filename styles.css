@@ -229,8 +229,8 @@ blockquote {
     /* |||| GENERAL |||| */
 
     main {
-        padding: 229px 161px 218px 165px;
-        /* padding: 229px 0 218px; */
+        /* padding: 229px 161px 218px 165px; */
+        padding: 229px 0 218px;
     }
     
     /* |||| CONTAINERS |||| */
@@ -239,8 +239,7 @@ blockquote {
         grid-template-areas: 
         "d-cliff    d-cliff     j-walters   k-whittle"
         "j-harmon   p-abrams    p-abrams    k-whittle";
+        row-gap: 16px;
         max-width: 1114px;
     }
 }
-
-/* figure out why the gap between rows is not matching the design file. */
