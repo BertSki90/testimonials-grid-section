@@ -56,15 +56,6 @@ main {
     padding: 5.615em 0;
 }
 
-img {
-    align-self: center;
-    border-radius: 50%;
-    /* height: 28px; */
-    height: 2.154em;
-    margin-inline-end: 15px;
-    object-fit: contain;
-}
-
 /* SCREEN READER - TITLE */
 
 .sr-only {
@@ -103,6 +94,7 @@ h2, h3, blockquote {
 p {
     font-size: var(--font-size--comment);
     line-height: 120%;
+    margin-block-end: 1.538em;
 }
 
 blockquote {
@@ -133,9 +125,14 @@ blockquote {
     display: flex;
 }
 
-.personal-id, p {
+.personal-id{
     /* margin-block-end: 16px; */
     margin-block-end: 1.231em;
+}
+
+.id--text {
+    /* margin-inline-start: 15px; */
+    margin-inline-start: 1.154em;
 }
 
 /* CARD BACKGROUND-COLOR AND COLOR */
@@ -176,13 +173,26 @@ blockquote {
     color: var(--white);
 }
 
-.img-border {
-    border: 2px solid var(--purple-300);
+img {
+    align-self: center;
+    border-radius: 50%;
+    /* height: 28px; */
+    height: 2.154em;
+    /* margin-inline-end: 15px; */
+    object-fit: contain;
 }
 
-/* .img-border::before {
-    background-color: var(--purple-300);
+/* .img-border {
+    border: 2px solid var(--purple-300);
 } */
+
+figure {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--purple-300);
+    border-radius: 50%;
+    /* margin-inline-end: 15px; */
+}
 
 /* |||| SCREEN SIZES |||| */
 
