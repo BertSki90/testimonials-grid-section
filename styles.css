@@ -95,6 +95,7 @@ p {
     font-size: var(--font-size--comment);
     line-height: 120%;
     margin-block-end: 1.538em;
+    /* work on spacing between <p> and <blockquote> (less spacing) */
 }
 
 blockquote {
