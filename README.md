@@ -77,7 +77,7 @@ See below:
     if not more so, in the company I joined. I honestly feel I got every penny’s
     worth.
   </p>
-  <!-- blockquote | max-width:87.2ch; -->
+  <!-- blockquote | max-width:72ch; -->
   <blockquote class="color-purple-50">
     “ I was an EMT for many years before I joined the bootcamp. I’ve been
     looking to make a transition and have heard some people who had an amazing
@@ -100,11 +100,51 @@ blockquote {
 }
 ```
 
+When putting a border around and image it will shrink the image. I wrapped the images to have borders with the figure element and styled that element with a border. From now on I will be wrapping my images with some sort of element in future projects to allow for more versatile styling. See below:
+
+```html
+<section class="card d-cliff bg-purple-500">
+  <header class="personal-id">
+    <figure>
+      <img
+        src="images/image-daniel.jpg"
+        alt="Profile picture of Daniel Clifford."
+        loading="lazy"
+        height="28px"
+        width="28px"
+      />
+    </figure>
+
+    <div class="id--text">
+      <h2>Daniel Clifford</h2>
+      <h3 class="color-purple-50">Verified Graduate</h3>
+    </div>
+  </header>
+  <!-- more code -->
+</section>
+```
+
+```css
+img {
+  align-self: center;
+  border-radius: 50%;
+  height: 2.154em;
+  object-fit: contain;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--purple-300);
+  border-radius: 50%;
+}
+```
+
 ### Continued development
 
-Completion time: 8:22
+Completion time: 9:22
 
-I am enjoying these projects. I want to get better at matching the design files, working with CSS grid and flexbox, and using HTML elements more semantically.
+I am enjoying these projects. I want to get better at matching the design files, working with CSS grid and flexbox, and using HTML elements more semantically. I need to train my eye to spot more details ahead of time.
 
 ### Useful resources
 
