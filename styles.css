@@ -180,6 +180,15 @@ figure {
     border-radius: 50%;
 }
 
+/* |||| FOOTER |||| */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+}
+
 /* |||| SCREEN SIZES |||| */
 
 /* TABLET */
