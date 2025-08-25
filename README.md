@@ -53,7 +53,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-The cards were not expanding the full length of the grid container making the cards different widths. With "max-width:100%;" the cards expanded across the full width of the cell and/or container. The text did not match the design. To fix this I gave "blockquote" a "max-width:87.2ch;" to closer match the text in the design file.
+The cards were not expanding the full length of the grid container making the cards different widths. With "max-width:100%;" the cards expanded across the full width of the cell and/or container. The text did not match the design. To fix this I gave "blockquote" a "max-width:72ch;" to closer match the text in the design file.
 
 See below:
 
@@ -92,8 +92,7 @@ See below:
 
 ```css
 blockquote {
-  max-width: 87.2ch;
-  /* max-width: 87.4ch; */
+  max-width: 72ch;
 }
 
 .card {
@@ -103,7 +102,7 @@ blockquote {
 
 ### Continued development
 
-Completion time: 6:42
+Completion time: 8:22
 
 I am enjoying these projects. I want to get better at matching the design files, working with CSS grid and flexbox, and using HTML elements more semantically.
 
