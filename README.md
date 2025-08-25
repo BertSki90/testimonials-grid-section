@@ -150,7 +150,7 @@ figure {
 
 ### Continued development
 
-Completion time: 9:22
+Completion time: 11hrs
 
 I am enjoying these projects. I want to get better at matching the design files, working with CSS grid and flexbox, and using HTML elements more semantically. I need to train my eye to spot more details ahead of time.
 
